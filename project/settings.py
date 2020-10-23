@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'turtles',
     'jwt_auth',
+    'comments',
 ]
 
 MIDDLEWARE = [
