@@ -7,6 +7,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticate
 
 from .models import Turtle
 from .serializers.common import TurtleSerializer
+from .serializers.populated import PopulatedTurtleSerializer
 
 # Create your views here.
 
@@ -15,7 +16,7 @@ class TurtleListView(APIView):
     
     def get(self, _request): # get all turtles
         turtles = Turtle.objects.all()
-        serialized_turtle_list = TurtleSerializer(turtles, many=True)
+        serialized_turtle_list = PopulatedTurtleSerializer(turtles, many=True)
         return Response(serialized_turtle_list.data, status=status.HTTP_200_OK)
     
     def post(self, request): # create new turtle
@@ -39,7 +40,7 @@ class TurtleDetailView(APIView):
         
     def get(self, _request, pk):
         turtle = self.get_turtle(pk=pk) # get single turtle
-        serialized_turtle = TurtleSerializer(turtle)
+        serialized_turtle = PopulatedTurtleSerializer(turtle)
         return Response(serialized_turtle.data, status=status.HTTP_200_OK)
     
     def put(self, request, pk):
