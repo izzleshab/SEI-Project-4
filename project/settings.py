@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'turtles',
     'jwt_auth',
     'comments',
+    'habitats',
 ]
 
 MIDDLEWARE = [
