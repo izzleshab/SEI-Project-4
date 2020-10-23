@@ -20,7 +20,7 @@ class CommentListView(APIView):
             return Response(comment_to_create.data, status=status.HTTP_201_CREATED)
         return Response(comment_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
     
-class CommentDetailsView(APIView):
+class CommentDetailView(APIView):
     permission_classes = (IsAuthenticated, )
     
     def get_comment(self, pk):
