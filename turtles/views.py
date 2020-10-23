@@ -28,6 +28,8 @@ class TurtleListView(APIView):
         return Response (turtle_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 class TurtleDetailView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
+    
     def get_turtle(self, pk):
         try: # django try catch, returns a turtle that exists, otherwise not found
             return Turtle.objects.get(pk=pk)
