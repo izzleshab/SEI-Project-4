@@ -15,6 +15,7 @@ class TurtleShow extends Component {
     this.setState({
       turtle: response.data
     })
+    console.log(response.data)
   }
 
   render() {
