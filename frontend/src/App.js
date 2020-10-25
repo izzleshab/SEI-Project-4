@@ -6,6 +6,7 @@ import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
 
 import TurtleIndex from './components/turtles/TurtleIndex'
+import TurtleShow from './components/turtles/TurtleShow'
 
 class App extends React.Component {
   // async componentDidMount() {
@@ -25,6 +26,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/turtles" component={TurtleIndex} />
+          <Route path="/turtles:id" component={TurtleShow} />
         </Switch>
         <Footer />
       </BrowserRouter>

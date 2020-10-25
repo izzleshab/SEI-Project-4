@@ -14,5 +14,7 @@ const baseUrl = '/api'
 
 export const getAllTurtles = () => {
   return axios.get(`${baseUrl}/turtles`)
-  
+}
+export const getSingleTurtle = turtleId => {
+  return axios.get(`${baseUrl}/turtles/${turtleId}`)
 }
