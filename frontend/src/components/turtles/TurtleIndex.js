@@ -1,10 +1,11 @@
 import React from 'react'
 
+import TurtleCard from './TurtleCard'
 import { getAllTurtles } from '../../lib/api'
 
 class TurtleIndex extends React.Component {
   state = {
-    turtles: null
+    turtles: []
   }
 
   async componentDidMount() {
@@ -18,7 +19,14 @@ class TurtleIndex extends React.Component {
 
   render () {
     return (
-      'HELLO TURTLES'
+      <div className="section">
+        <div className="container">
+          <div className="columns is-multiline">
+            { this.state.turtles.map(turtle => <TurtleCard key={turtle.id} {...turtle} /> 
+            ) }
+          </div>
+        </div>
+      </div>
     )
   }
 
