@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
-import Footer from ''
+import Footer from './components/common/Footer'
 
 import TurtleIndex from './components/turtles/TurtleIndex'
 
@@ -26,6 +26,7 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route path="/turtles" component={TurtleIndex} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     )
   }
