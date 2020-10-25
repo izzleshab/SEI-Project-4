@@ -3,7 +3,7 @@ import React from 'react'
 class App extends React.Component {
   async componentDidMount() {
     try {
-      const response = await fetch('/api/resource-name')
+      const response = await fetch('/api/turtles')
       const data = await response.json()
       console.log(data)
     } catch (err) {
@@ -12,7 +12,7 @@ class App extends React.Component {
   }
 
   render() {
-    return null
+    return 'HELLO WORLD'
   }
 }
 
