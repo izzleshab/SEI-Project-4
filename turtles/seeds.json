@@ -1,0 +1,350 @@
+[
+{
+  "model": "turtles.turtle",
+  "pk": 1,
+  "fields": {
+    "name": "Yellow Bellied Turtle",
+    "species": "Trachemys scripta scripta",
+    "diet": "Carnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Yellow-Bellied-Turtle-1-1020x560.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 2,
+  "fields": {
+    "name": "​Red Ear Slider",
+    "species": "Emydidae Trachemys",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Red-Eared-Slider-2.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 3,
+  "fields": {
+    "name": "Florida Red Belly",
+    "species": "Pseudemys Nelsoni",
+    "diet": "Herbivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Florida-Red-bellied-Cooter-2.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 4,
+  "fields": {
+    "name": "Cumberland Slider",
+    "species": "Trachemys scripta troostii ",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Cumberland-Slider-Trachemys-scripta-troostii.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 5,
+  "fields": {
+    "name": "Eastern River Cooter",
+    "species": "Pseudemys Concinna Concinna)",
+    "diet": "Herbivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Eastern-River-Cooter-Pseudemys-concinna-concinna-1.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 6,
+  "fields": {
+    "name": "Japanese Pond Turtle",
+    "species": "Mauremys japonica",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Mauremys_japonica_ishigame-2.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 7,
+  "fields": {
+    "name": "European Pond Terrapin",
+    "species": "Emys orbicularis",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/European-Pond-Tortoise.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 8,
+  "fields": {
+    "name": "Reeves Turtle",
+    "species": "Mauremys reevesii",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Reeves-Turtle-Mauremys-reevesii.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 10,
+  "fields": {
+    "name": "Indian Tent Turtle",
+    "species": "Pangshura Tentoria",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Indian_tent_turtle_Pangshura_tentoria_tentoria.jpg",
+    "owner": 1,
+    "habitat": 2
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 11,
+  "fields": {
+    "name": "Bog Turtle",
+    "species": "Glyptemys muhlenbergii",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Bog-Turtle-Glyptemys-muhlenbergii.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 12,
+  "fields": {
+    "name": "Matamata Turtle",
+    "species": "Chelus fimbriata",
+    "diet": "Carnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Chelus-fimbriata-Matamata-Turtle.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 13,
+  "fields": {
+    "name": "Blanding's Turtle",
+    "species": "Emydoidea Blandingii",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Blandings_turtle_Emydoidea_blandingii.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 14,
+  "fields": {
+    "name": "Pig Nosed Turtle",
+    "species": "Carettochelys insculpta",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Pig-Nosed-Turle-1020x560.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 15,
+  "fields": {
+    "name": "The Chicken Turtle",
+    "species": "Deirochelys Reticulari",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/chicken-turtle-1020x560.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 16,
+  "fields": {
+    "name": "Spotted Turtle",
+    "species": "Clemmys Guttata",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Spotted-Turtle-1.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 17,
+  "fields": {
+    "name": "African Helmeted Turtle",
+    "species": "Pelomedusa subrufa ",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/African-Helmeted-Turtle-1020x560.jpg",
+    "owner": 1,
+    "habitat": 2
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 18,
+  "fields": {
+    "name": "Big Headed Turtle",
+    "species": "Platysternon Megacephalum",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Platysternen_megacephalum-Big-Headed-Turtle.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 19,
+  "fields": {
+    "name": "Leaf Turtles",
+    "species": "Geoemyda japonica",
+    "diet": "Herbivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Leaf-Turtles.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 20,
+  "fields": {
+    "name": "Vietnamese Black Breasted Leaf Turtle",
+    "species": "Geoemyda Spengleri",
+    "diet": "Herbivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Black-breasted-Leaf-Turtle.jpg",    
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 21,
+  "fields": {
+    "name": "DiamondBack Terrapin",
+    "species": "Malaclemys Terrapin",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Texas-Diamondback-Terrapin-1.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 22,
+  "fields": {
+    "name": "Alligator Snapping Turtle",
+    "species": "Macrochelys temminckii",
+    "diet": "Carnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/baby-Alligator-snapping-turtle.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 23,
+  "fields": {
+    "name": "Common Snapping Turtle",
+    "species": "Chelydra serpentina",
+    "diet": "Carnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Common-Snapping-Turtle-Chelydra-serpentina.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 24,
+  "fields": {
+    "name": "Common Box Turtle",
+    "species": "Terrapene carolina",
+    "diet": "Herbivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Common-Box-Turtle-1.jpg",
+    "owner": 1,
+    "habitat": 2
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 25,
+  "fields": {
+    "name": "Coahuilan Box Turtle",
+    "species": "Terrapene coahuila",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Coahuilan-Box-Turtle-3.jpg",
+    "owner": 1,
+    "habitat": 3
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 26,
+  "fields": {
+    "name": "Mexican Box Turtle",
+    "species": "Terrapene carolina mexicana",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Mexican-Box-Turtle-Terrapene-carolina-mexicana.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 28,
+  "fields": {
+    "name": "Spotted Box Turtle",
+    "species": "Terrapene nelsoni",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Female-Spotted-Box-Turtle-Terrapene-nelsoni.jpg",
+    "owner": 1,
+    "habitat": 2
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 29,
+  "fields": {
+    "name": "Western Box Turtle",
+    "species": "Terrapene ornata",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Ornate-Box-Turtle.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 30,
+  "fields": {
+    "name": "Yucatán Box Turtle",
+    "species": "Terrapene yucatana",
+    "diet": "Omnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Yucatan-Box-Turtle-Terrapene-yucatana.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+},
+{
+  "model": "turtles.turtle",
+  "pk": 31,
+  "fields": {
+    "name": "Razorback Musk Turtle",
+    "species": "Sternotherus Carinatus",
+    "diet": "Carnivore",
+    "image": "https://www.allturtles.com/wp-content/uploads/Razorback-Musk-Turtle.jpg",
+    "owner": 1,
+    "habitat": 1
+  }
+}
+]

@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from rest_framework.exceptions import NotFound, PermissionDenied
-from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Turtle
 from .serializers.common import TurtleSerializer

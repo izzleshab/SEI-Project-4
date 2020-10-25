@@ -1,0 +1,23 @@
+[
+  {
+    "model": "habitats.Habitat",
+    "pk": 1,
+    "fields": {
+      "name": "Aquatic"
+    }
+  },
+  {
+    "model": "habitats.Habitat",
+    "pk": 2,
+    "fields": {
+      "name": "Terrestrial"
+    }
+  },
+  {
+    "model": "habitats.Habitat",
+    "pk": 3,
+    "fields": {
+      "name": "Hybrid"
+    }
+  }
+]
