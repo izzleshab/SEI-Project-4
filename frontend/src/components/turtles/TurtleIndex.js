@@ -11,7 +11,7 @@ class TurtleIndex extends React.Component {
     // get all turtles
     const response = await getAllTurtles()
     this.setState({
-      cheeses: response.data // add them to the state
+      turtles: response.data // add them to the state
     })
     console.log(response.data)
   }
