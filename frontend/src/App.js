@@ -9,6 +9,7 @@ import TurtleIndex from './components/turtles/TurtleIndex'
 import TurtleShow from './components/turtles/TurtleShow'
 
 import Register from './components/auth/Register'
+import Login from './components/auth/Login'
 
 class App extends React.Component {
   // async componentDidMount() {
@@ -30,6 +31,7 @@ class App extends React.Component {
           <Route path="/turtles/:id" component={TurtleShow} />
           <Route path="/turtles" component={TurtleIndex} />
           <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
         </Switch>
         <Footer />
       </BrowserRouter>
