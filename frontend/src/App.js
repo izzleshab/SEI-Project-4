@@ -8,6 +8,8 @@ import Footer from './components/common/Footer'
 import TurtleIndex from './components/turtles/TurtleIndex'
 import TurtleShow from './components/turtles/TurtleShow'
 
+import Register from './components/auth/Register'
+
 class App extends React.Component {
   // async componentDidMount() {
   //   try {
@@ -25,8 +27,9 @@ class App extends React.Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/turtles/:id" component={TurtleShow} />
           <Route path="/turtles" component={TurtleIndex} />
-          <Route path="/turtles:id" component={TurtleShow} />
+          <Route path="/register" component={Register} />
         </Switch>
         <Footer />
       </BrowserRouter>

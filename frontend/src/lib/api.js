@@ -18,3 +18,9 @@ export const getAllTurtles = () => {
 export const getSingleTurtle = turtleId => {
   return axios.get(`${baseUrl}/turtles/${turtleId}`)
 }
+
+// auth
+
+export const registerUser = formData => {
+  return axios.post(`${baseUrl}/register`, formData)
+}
