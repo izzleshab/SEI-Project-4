@@ -11,6 +11,8 @@ import TurtleShow from './components/turtles/TurtleShow'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 
+import ProfilePage from './components/userprofile/ProfilePage'
+
 class App extends React.Component {
   // async componentDidMount() {
   //   try {
@@ -32,6 +34,7 @@ class App extends React.Component {
           <Route path="/turtles" component={TurtleIndex} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
+          <Route path="/profile" component={ProfilePage} />
         </Switch>
         <Footer />
       </BrowserRouter>

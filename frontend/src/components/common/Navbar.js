@@ -21,6 +21,7 @@ const Navbar = () => {
         <div className="navbar-end">
           { !isAuthenticated() && <Link to="/register" className="navbar-item has-text-black">Register</Link> }
           { !isAuthenticated() && <Link to="/login" className="navbar-item has-text-black">Log in</Link> }
+          { isAuthenticated() && <Link to="/profile" className="navbar-item has-text-black">Profile</Link> }
           { isAuthenticated() && <Link to="/" onClick={handleLogout} className="navbar-item has-text-black">Logout</Link>}
         </div>
       </div>
