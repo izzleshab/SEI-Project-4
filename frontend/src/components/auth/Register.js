@@ -5,12 +5,12 @@ class Register extends React.Component {
   state = {
     formData: {
       username: '',
-      firstName: '',
-      lastName: '',
+      first_name: '',
+      last_name: '',
       email: '',
-      profileImage: '',
+      profile_image: '',
       password: '',
-      passwordConfirmation: ''
+      password_confirmation: ''
     },
     errors: {}
   }
@@ -26,6 +26,7 @@ class Register extends React.Component {
       [event.target.name]: ''
     }
     this.setState({ formData, errors })
+    console.log(event.target.name, event.target.value)
   }
 
   handleSubmit = async event => {
@@ -40,7 +41,7 @@ class Register extends React.Component {
   }
 
   render () {
-    const { username, firstName, lastName, email, password, passwordConfirmation } = this.state.formData
+    const { username, first_name, last_name, email, profile_image, password, password_confirmation } = this.state.formData
     return ( 
       <section className="Register section">
         <form onSubmit={this.handleSubmit}>
@@ -51,17 +52,17 @@ class Register extends React.Component {
             onChange={this.handleChange}
           />
           <input 
-            type="firstName" 
+            type="first_name" 
             placeholder="First Name"
-            name="firstName"
-            value={firstName}
+            name="first_name"
+            value={first_name}
             onChange={this.handleChange}
           />
           <input 
-            type="lastName" 
+            type="last_name" 
             placeholder="Last Name"
-            name="lastName"
-            value={lastName}
+            name="last_name"
+            value={last_name}
             onChange={this.handleChange}
           />
           <input 
@@ -69,6 +70,13 @@ class Register extends React.Component {
             placeholder="Email"
             name="email"
             value={email}
+            onChange={this.handleChange}
+          />
+          <input 
+            type="profile_image" 
+            placeholder="Profile Image"
+            name="profile_image"
+            value={profile_image}
             onChange={this.handleChange}
           />
           <input 
@@ -81,8 +89,8 @@ class Register extends React.Component {
           <input 
             type="password" 
             placeholder="Password Confirmation"
-            name="passwordConfirmation"
-            value={passwordConfirmation}
+            name="password_confirmation"
+            value={password_confirmation}
             onChange={this.handleChange}
           />
           <button type="submit" className="button is-fullwidth is-warning">Register</button>

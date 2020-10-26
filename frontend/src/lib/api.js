@@ -22,5 +22,9 @@ export const getSingleTurtle = turtleId => {
 // auth
 
 export const registerUser = formData => {
-  return axios.post(`${baseUrl}/register`, formData)
+  return axios.post(`${baseUrl}/auth/register/`, formData)
+}
+
+export const loginUser = formData => {
+  return axios.post(`${baseUrl}/auth/login/`, formData)
 }
