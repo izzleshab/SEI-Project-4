@@ -1,18 +1,12 @@
-// User authentication
-export const setUserId = userId => {
-  localStorage.setItem('userId', userId)
-}
+// User authentication 
+
 export const logoutId = () => {
   localStorage.removeItem('userId')
 }
-export const getId = () => {
-  return localStorage.getItem('userId')
-}
+
 
 // Token authentication
-export const setToken = token => {
-  localStorage.setItem('token', token) 
-}
+
 
 export const logout = () => {
   localStorage.removeItem('token')
