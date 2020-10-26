@@ -55,7 +55,7 @@ class TurtleShow extends Component {
               <span role="img" aria-label=""></span>
               Added by 
             </h4>
-            <p>{turtle.owner.id}</p>
+            <p>{turtle.owner.username}</p>
           </div>
         </div>
       </section>
