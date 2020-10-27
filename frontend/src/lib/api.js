@@ -25,7 +25,7 @@ export const createTurtle = formData => {
 }
 
 export const updateTurtle = (id, formData) => {
-  return axios.put(`${baseUrl}/turtles/${id}`, formData, withHeaders())
+  return axios.put(`${baseUrl}/turtles/${id}/`, formData, withHeaders())
 }
 
 // auth

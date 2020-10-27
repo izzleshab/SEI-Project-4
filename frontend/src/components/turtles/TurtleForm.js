@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TurtleForm = props => {
-  const { name, species, diet, image, habitat } = props.formData
+  const { name, species, diet, image, habitat, owner } = props.formData
   const { handleChange, handleSubmit } = props
 
   return (
@@ -63,6 +63,18 @@ const TurtleForm = props => {
               placeholder="Image Address Here"
               name="image"
               value={image}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="field">
+          <label className="label">Owner</label>
+          <div className="control">
+            <input 
+              className="input"
+              placeholder="Owner ID here (editing only)"
+              name="owner"
+              value={owner}
               onChange={handleChange}
             />
           </div>
