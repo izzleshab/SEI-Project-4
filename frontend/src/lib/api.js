@@ -28,6 +28,10 @@ export const updateTurtle = (id, formData) => {
   return axios.put(`${baseUrl}/turtles/${id}/`, formData, withHeaders())
 }
 
+export const deleteTurtle = id => {
+  return axios.delete(`${baseUrl}/turtles/${id}/`, null, withHeaders())
+} 
+
 // auth
 
 export const registerUser = formData => {

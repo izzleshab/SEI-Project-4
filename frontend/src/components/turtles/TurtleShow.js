@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { getSingleTurtle } from '../../lib/api'
+import { deleteTurtle, getSingleTurtle } from '../../lib/api'
 
 class TurtleShow extends Component {
 
@@ -17,6 +17,14 @@ class TurtleShow extends Component {
     })
     console.log(response.data)
   }
+
+
+  handleDelete = async () => {
+    const turtleId = this.props.match.params.id
+    await deleteTurtle(turtleId)
+    this.props.history.push('/turtles')
+  }
+
 
   render() {
     const { turtle } = this.state
@@ -58,7 +66,11 @@ class TurtleShow extends Component {
             <p>{turtle.owner.username}</p>
             <br />
             <div>
+              <hr />
               <Link to={`/turtles/${turtle.id}/edit`} className="button is-success">Edit</Link>
+              <br />
+              <br />
+              <button onClick={this.handleDelete} className="button is-danger">Delete</button>
             </div>
           </div>
         </div>
