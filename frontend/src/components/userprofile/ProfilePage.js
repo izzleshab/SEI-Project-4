@@ -36,6 +36,7 @@ class ProfilePage extends React.Component {
           {this.state.userData.created_turtles.map(turtle => (
             <div key="turtle">
               <p key={turtle.name}>{turtle.name}</p>
+              <br />
               <img src={turtle.image}></img>
             </div>
           ))}

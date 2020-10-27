@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { getSingleTurtle } from '../../lib/api'
 
 class TurtleShow extends Component {
@@ -56,6 +56,10 @@ class TurtleShow extends Component {
               Added by 
             </h4>
             <p>{turtle.owner.username}</p>
+            <br />
+            <div>
+              <Link to={`/turtles/${turtle.id}/edit`} className="button is-success">Edit</Link>
+            </div>
           </div>
         </div>
       </section>
