@@ -17,6 +17,7 @@ const Navbar = () => {
             <img src="https://bit.ly/35Ai3V8" width="30" height="30"/>
           </a>
           <Link to="/turtles" className="navbar-item has-text-black">Shellbook</Link>
+          { isAuthenticated() && <Link to="/turtles/new" className="navbar-item has-text-black">Add Turtle</Link>}
         </div>
         <div className="navbar-end">
           { !isAuthenticated() && <Link to="/register" className="navbar-item has-text-black">Register</Link> }

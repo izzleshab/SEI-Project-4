@@ -31,17 +31,22 @@ class ProfilePage extends React.Component {
         </div>
         <div className="column is-half">
           <h4 className="title is-4">
-            Comments:
+            Submitted Turtles:
           </h4>
-          {this.state.userData.posted_comments.map(comment => (
-            <p key={comment.text}>{comment.text}</p>
+          {this.state.userData.created_turtles.map(turtle => (
+            <div key="turtle">
+              <p key={turtle.name}>{turtle.name}</p>
+              <img src={turtle.image}></img>
+            </div>
           ))}
         </div>
         <div className="column is-half">
           <h4 className="title is-4">
-            Turtles:
+            Posted Comments:
           </h4>
-          <p>{this.state.userData.created_turtles }</p>
+          {this.state.userData.posted_comments.map(comment => (
+            <p key={comment.text}>{comment.text}</p>
+          ))}
         </div>
       </section>
     )
