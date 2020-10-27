@@ -2,13 +2,13 @@ import axios from 'axios'
 
 const baseUrl = '/api'
 
-// const withHeaders = () => {
-//   return {
-//     headers: {
-//       Authorization: `Bearer ${localStorage.getItem('token')}`
-//     }
-//   }
-// }
+const withHeaders = () => {
+  return {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem('token')}`
+    }
+  }
+}
 
 // turtles
 
@@ -17,6 +17,10 @@ export const getAllTurtles = () => {
 }
 export const getSingleTurtle = turtleId => {
   return axios.get(`${baseUrl}/turtles/${turtleId}`)
+}
+
+export const createTurtle = formData => {
+  return axios.post(`${baseUrl}/turtles`, formData, withHeaders())
 }
 
 // auth
@@ -28,3 +32,10 @@ export const registerUser = formData => {
 export const loginUser = formData => {
   return axios.post(`${baseUrl}/auth/login/`, formData)
 }
+
+// profile
+
+export const getUserProfile = () => {
+  return axios.get(`${baseUrl}/auth/profile`, withHeaders())
+}
+

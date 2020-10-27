@@ -7,6 +7,7 @@ import Footer from './components/common/Footer'
 
 import TurtleIndex from './components/turtles/TurtleIndex'
 import TurtleShow from './components/turtles/TurtleShow'
+import TurtleNew from './components/turtles/TurtleNew'
 
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
@@ -30,6 +31,7 @@ class App extends React.Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/turtles/new" component={TurtleNew} />
           <Route path="/turtles/:id" component={TurtleShow} />
           <Route path="/turtles" component={TurtleIndex} />
           <Route path="/register" component={Register} />
