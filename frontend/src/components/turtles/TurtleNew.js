@@ -10,7 +10,8 @@ class TurtleNew extends React.Component {
       name: '',
       species: '',
       diet: '',
-      image: ''
+      image: '',
+      habitat: ''
     }
   }
   
@@ -25,7 +26,7 @@ class TurtleNew extends React.Component {
   handleSubmit = async event => {
     event.preventDefault()
     const response = await createTurtle(this.state.formData)
-    this.props.history.push(`/turtles/${response.data._id}`)
+    this.props.history.push(`/turtles/${response.data.id}`)
   }
 
   render() {

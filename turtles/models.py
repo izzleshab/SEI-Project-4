@@ -10,7 +10,7 @@ class Turtle(models.Model):
     habitat = models.ForeignKey(
         'habitats.Habitat',
         related_name="habitat",
-        on_delete=models.PROTECT
+        on_delete=models.CASCADE
     )
     owner = models.ForeignKey(
         'jwt_auth.User',

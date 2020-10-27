@@ -20,7 +20,7 @@ export const getSingleTurtle = turtleId => {
 }
 
 export const createTurtle = formData => {
-  return axios.post(`${baseUrl}/turtles`, formData, withHeaders())
+  return axios.post(`${baseUrl}/turtles/`, formData, withHeaders())
 }
 
 // auth
