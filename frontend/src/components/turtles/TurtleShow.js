@@ -63,15 +63,28 @@ class TurtleShow extends Component {
               <span role="img" aria-label=""></span>
               Added by 
             </h4>
-            <p>{turtle.owner.username}</p>
-            <br />
-            <div>
-              <hr />
-              <Link to={`/turtles/${turtle.id}/edit`} className="button is-success">Edit</Link>
+            <p>
+              {turtle.owner.username}
               <br />
               <br />
-              <button onClick={this.handleDelete} className="button is-danger">Delete</button>
-            </div>
+              <div>
+                <Link to={`/turtles/${turtle.id}/edit`} className="button is-success">Edit</Link>
+                <br />
+                <br />
+                <button onClick={this.handleDelete} className="button is-danger">Delete</button>
+                <hr />
+              </div>
+            </p>
+          </div>
+          <div className="column is-half">
+            <h4 className="title is-4">
+              <span role="img" aria-label=""></span>
+              Comments
+            </h4>
+            {turtle.comments.map(comment => (
+              <p key={comment.text}>{comment.text}</p>
+            ))}
+            <hr /> 
           </div>
         </div>
       </section>
