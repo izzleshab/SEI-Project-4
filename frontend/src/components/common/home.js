@@ -13,13 +13,14 @@ import {  } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <section className="hero is-fullheight-with-navbar is-light">
+    <section className="hero is-fullheight-with-navbar is-light has-background-success-dark">
       <div className="hero-body">
         <div className="container">
           <h1 className="title is-1 has-text-centered has-text-black">
-            <span role="img" aria-label="turtle emoji"> </span>
             Shellbook
           </h1>
+          <p className="title is-3 has-text-centered has-text-black">
+          </p>
         </div>
       </div>
     </section>

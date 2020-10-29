@@ -16,14 +16,14 @@ const Navbar = () => {
           <a className="navbar-item" href="/">
             <img src="https://bit.ly/35Ai3V8" width="30" height="30"/>
           </a>
-          <Link to="/turtles" className="navbar-item has-text-black">Shellbook</Link>
-          { isAuthenticated() && <Link to="/turtles/new" className="navbar-item has-text-black">Add Turtle</Link>}
+          <Link to="/turtles" className="navbar-item has-text-black is-size-5">Shellbook</Link>
+          { isAuthenticated() && <Link to="/turtles/new" className="navbar-item has-text-black is-size-5">Add Turtle</Link>}
         </div>
         <div className="navbar-end">
-          { !isAuthenticated() && <Link to="/register" className="navbar-item has-text-black">Register</Link> }
-          { !isAuthenticated() && <Link to="/login" className="navbar-item has-text-black">Log in</Link> }
-          { isAuthenticated() && <Link to="/profile" className="navbar-item has-text-black">Profile</Link> }
-          { isAuthenticated() && <Link to="/" onClick={handleLogout} className="navbar-item has-text-black">Logout</Link>}
+          { !isAuthenticated() && <Link to="/register" className="navbar-item has-text-black is-size-5">Register</Link> }
+          { !isAuthenticated() && <Link to="/login" className="navbar-item has-text-black is-size-5">Log in</Link> }
+          { isAuthenticated() && <Link to="/profile" className="navbar-item has-text-black is-size-5">Profile</Link> }
+          { isAuthenticated() && <Link to="/" onClick={handleLogout} className="navbar-item has-text-black is-size-5">Logout</Link>}
         </div>
       </div>
     </nav>

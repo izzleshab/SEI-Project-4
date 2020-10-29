@@ -50,3 +50,6 @@ export const getUserProfile = () => {
 
 // comments
 
+export const createComment = formData => {
+  return axios.post(`${baseUrl}/comments/`, formData, withHeaders())
+}

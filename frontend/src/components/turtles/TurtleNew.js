@@ -31,7 +31,7 @@ class TurtleNew extends React.Component {
 
   render() {
     return (
-      <section className="section">
+      <section className="section has-background-success-dark">
         <div className="container">
           <TurtleForm 
             handleChange={this.handleChange}

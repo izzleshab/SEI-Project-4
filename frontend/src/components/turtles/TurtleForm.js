@@ -5,8 +5,8 @@ const TurtleForm = props => {
   const { handleChange, handleSubmit } = props
 
   return (
-    <div className="columsn">
-      <form onSubmit={handleSubmit}className="column is-half is-offset-one-quarter box">
+    <div className="column">
+      <form onSubmit={handleSubmit}className="column is-half is-offset-one-quarter box has-background-success">
         <div className="field">
           <label className="label">Name</label>
           <div className="control">
@@ -80,7 +80,7 @@ const TurtleForm = props => {
           </div>
         </div>
         <div className="field">
-          <button type="submit" className="button is-fullwidth is-success has-text-black">Submit</button>
+          <button type="submit" className="button is-fullwidth is-warning is-success is-inverted is-outlined has-text-black">Submit</button>
         </div>
       </form>
     </div>

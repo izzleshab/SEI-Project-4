@@ -19,12 +19,10 @@ class TurtleIndex extends React.Component {
 
   render () {
     return (
-      <div className="section">
-        <div className="container">
-          <div className="columns is-multiline">
-            { this.state.turtles.map(turtle => <TurtleCard key={turtle.id} {...turtle} /> 
-            ) }
-          </div>
+      <div className="section has-background-success-dark">
+        <div className="columns is-multiline">
+          { this.state.turtles.map(turtle => <TurtleCard key={turtle.id} {...turtle} /> 
+          ) }
         </div>
       </div>
     )

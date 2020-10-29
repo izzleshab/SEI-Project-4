@@ -23,31 +23,41 @@ class ProfilePage extends React.Component {
     console.log(this.state)
     return (
       <section>
-        <div className="column is-half">
-          <h4 className="title is-4">
-            Username:
-          </h4>
-          <p>{this.state.userData.username}</p>
-        </div>
-        <div className="column is-half">
-          <h4 className="title is-4">
-            Submitted Turtles:
-          </h4>
-          {this.state.userData.created_turtles.map(turtle => (
-            <div key="turtle">
-              <p key={turtle.name}>{turtle.name}</p>
-              <br />
-              <img src={turtle.image}></img>
+        <div className="column has-background-success-dark">
+          <div className="box radius is-small has-background-success">
+            <h4 className="title is-3">
+              Username: 
+            </h4>
+            <h6 className="title is-4">
+              {this.state.userData.username}
+            </h6>
+          </div>
+          <div className="box has-background-success">
+            <h4 className="title is-3">
+              Submitted Turtles:
+            </h4>
+            <div>
+              {this.state.userData.created_turtles.map(turtle => (
+                <div className="title is-4" key="turtle">
+                  <p key={turtle.name}><strong>{turtle.name}</strong></p>
+                  <br />
+                  <div className="column is-one-third has-background-success-dark">
+                    <img className="" src={turtle.image}></img>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <div className="column is-half">
-          <h4 className="title is-4">
-            Posted Comments:
-          </h4>
-          {this.state.userData.posted_comments.map(comment => (
-            <p key={comment.text}>{comment.text}</p>
-          ))}
+          </div>
+          <div className="box is-half has-background-success">
+            <h4 className="title is-3">
+              Posted Comments:
+            </h4>
+            {this.state.userData.posted_comments.map(comment => (
+              <p key={comment.text}>
+                <strong>{comment.text}</strong>
+              </p>
+            ))}
+          </div>
         </div>
       </section>
     )

@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { deleteTurtle, getSingleTurtle } from '../../lib/api'
+import { deleteTurtle, getSingleTurtle, createComment } from '../../lib/api'
 
 class TurtleShow extends Component {
 
   state = {
+    formData: {
+      text: ''
+    },
     turtle: null
   }
 
@@ -15,7 +18,28 @@ class TurtleShow extends Component {
     this.setState({
       turtle: response.data
     })
-    console.log(response.data)
+  }
+
+  handleChange = event => {
+    const formData = {
+      text: event.target.value
+    } 
+    this.setState({
+      formData: formData
+    })
+  } 
+
+  handleSubmit = async () => {
+    const turtleId = this.props.match.params.id
+    this.state.formData.turtle = turtleId
+    await createComment(this.state.formData)
+    const response = await getSingleTurtle(turtleId)
+    this.setState({
+      turtle: response.data,
+      formData: {
+        text: ''
+      }
+    })
   }
 
 
@@ -25,66 +49,65 @@ class TurtleShow extends Component {
     this.props.history.push('/turtles')
   }
 
-
   render() {
     const { turtle } = this.state
     if ( !turtle ) return null
     return (
-      <section className="section">
+      <section className="section has-background-success-dark">
         <div className="container">
-          <div className="columns">
-            <figure className="image">
+          <div className="box has-background-success">
+            <figure className="image ">
               <img src={turtle.image} alt={turtle.name} />
             </figure>
           </div>
-          <div className="column is-half">
-            <h4 className="title is-4">
-              <span role="img" aria-label=""></span>
+          <div className="has-text-center has-background-success box">
+            <h4 className="title is-3 has-text-centered">
               Name
             </h4>
-            <p>{turtle.name}</p>
+            <h5 className="title is-4 has-text-centered">{turtle.name}</h5>
           </div>
-          <div className="column is-half">
-            <h4 className="title is-4">
-              <span role="img" aria-label=""></span>
+          <div className="has-text-center has-background-success box">
+            <h4 className="title is-3 has-text-centered">
               Species
             </h4>
-            <p>{turtle.species}</p>
+            <h5 className="title is-4 has-text-centered is-italic">{turtle.species}</h5>
           </div>
-          <div className="column is-half">
-            <h4 className="title is-4">
-              <span role="img" aria-label=""></span>
+          <div className="has-text-center has-background-success box">
+            <h4 className="title is-3 has-text-centered">
               Diet
             </h4>
-            <p>{turtle.diet}</p>
+            <h5 className="title is-4 has-text-centered">{turtle.diet}</h5>
           </div>
-          <div className="column is-half">
-            <h4 className="title is-4">
-              <span role="img" aria-label=""></span>
+          <div className="has-text-center has-background-success box">
+            <h4 className="title is-3 has-text-centered">
               Added by 
             </h4>
-            <p>
-              {turtle.owner.username}
+            <div>
+              <h5 className="title is-4 has-text-centered">
+                {turtle.owner.username}
+              </h5>
               <br />
-              <br />
-              <div>
-                <Link to={`/turtles/${turtle.id}/edit`} className="button is-success">Edit</Link>
+              <h5>
+                <Link to={`/turtles/${turtle.id}/edit`} className="button is-fullwidth is-warning is-success is-inverted is-outlined has-text-black"><strong>Edit</strong></Link>
                 <br />
-                <br />
-                <button onClick={this.handleDelete} className="button is-danger">Delete</button>
-                <hr />
-              </div>
-            </p>
+                <button onClick={this.handleDelete} className="button is-fullwidth is-danger has-text-black"><strong>Delete</strong></button>
+              </h5>
+            </div>
           </div>
-          <div className="column is-half">
-            <h4 className="title is-4">
-              <span role="img" aria-label=""></span>
+          <div className="column has-text-center has-background-success box">
+            <h4 className="title is-3 has-text-centered">
               Comments
             </h4>
             {turtle.comments.map(comment => (
-              <p key={comment.text}>{comment.text}</p>
+              <div className="column is-outlined" key={comment.id}>
+                <h5 className="title is-4 has-text-centered">{comment.owner.username} says:</h5>
+                <h6 className="title is-5 has-text-centered">{comment.text}</h6>
+                <hr className="has-background-black" />
+              </div>
             ))}
-            <hr /> 
+            <textarea className="textarea is-half is-outlined is-black" value={this.state.formData.text} onChange={this.handleChange}></textarea>
+            <br />
+            <button type="submit" onClick={this.handleSubmit} className="button is-fullwidth is-warning is-success is-inverted is-outlined has-text-black"><strong>Submit</strong></button>
           </div>
         </div>
       </section>
