@@ -13,11 +13,11 @@ const withHeaders = () => {
 // turtles
 
 export const getAllTurtles = () => {
-  return axios.get(`${baseUrl}/turtles`)
+  return axios.get(`${baseUrl}/turtles/`)
 }
 
 export const getSingleTurtle = turtleId => {
-  return axios.get(`${baseUrl}/turtles/${turtleId}`)
+  return axios.get(`${baseUrl}/turtles/${turtleId}/`)
 }
 
 export const createTurtle = formData => {
@@ -45,7 +45,7 @@ export const loginUser = formData => {
 // profile
 
 export const getUserProfile = () => {
-  return axios.get(`${baseUrl}/auth/profile`, withHeaders())
+  return axios.get(`${baseUrl}/auth/profile/`, withHeaders())
 }
 
 // comments
