@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img src="https://i.imgur.com/93b9Qyy.png" width="30" height="30"/>
+            <img src="https://bit.ly/35Ai3V8" width="30" height="30"/>
           </a>
           <Link to="/turtles" className="navbar-item has-text-black is-size-5">Shellbook</Link>
           { isAuthenticated() && <Link to="/turtles/new" className="navbar-item has-text-black is-size-5">Add Turtle</Link>}
