@@ -72,11 +72,11 @@ Source code was provided by GA, and the following commands were input into the t
 
 ![add-turtle](./readme_assets/add-turtle.png)
 
-### A created turtle will now be visible 
+### A created turtle will now be visible. 
 
 ![turtle-show](./readme_assets/turtle-show.png)
 
-### Users may comment on turtles
+### Users may comment on turtles.
 
 ![turtle-show-comments](./readme_assets/turtle-show-comments.png)
 
@@ -84,13 +84,13 @@ Source code was provided by GA, and the following commands were input into the t
 
 Like similar fan sites, users of Shellbook can:
 
-- Register & Login
-- View their profile page
-- Add animals to the main page
-- View animals on the main page
-- View animals on the show page
-- Comment on animals on the show page 
-- Update & Delete animals
+- Register & Login.
+- View their profile page.
+- Add animals to the main page.
+- View animals on the main page.
+- View animals on the show page.
+- Comment on animals on the show page .
+- Update & Delete animals.
 
 ## Process
 
