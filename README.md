@@ -100,7 +100,7 @@ The process by which I developed this app started with planning. My initial step
 
 Once I was satisfied with the ERD, I moved onto creating hand-drawn wireframes for the frontend. This is a step in hindsight I wish I did digitally, and will move onto digital wireframing for future projects.
 
-To establish the RESTful features of Shellbook, I started development by building my models, views and serializers in Django REST Framework to create a SQL database. This process took a couple of days as I wanted to ensure everything was working as intended. To visualise my PostgreSQL database, I utilized tableplus as well as the Insomnia REST client to test my backend requests. This way I ensured my relationships between models were correct based off of the JSON responses I received. 
+To establish the RESTful features of Shellbook, I started development by building my models, views and serializers in Django REST Framework to create a SQL database. This process was completed by the end of day 2 as I wanted to ensure everything was working as intended. To visualise my PostgreSQL database, I utilized tableplus as well as the Insomnia REST client to test my backend requests. This way I ensured my relationships between models were correct based off of the JSON responses I received. 
 
 By day 3 I was pleased with the current state of the backend and opted to shift my focus to the frontend. I installed the CSS framework Bulma as I have previous experience with the framework and appreciate its simplicity in styling in the interest of saving time. Using React and React-router-dom, I created the appropriate pages for Shellbook: home, mainpage, showpage, register, login and profile. 
 
